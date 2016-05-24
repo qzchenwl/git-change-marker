@@ -4,5 +4,19 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-.git-diff-revert {
+.git-diff-revert-control {
+  background-color: @tool-panel-background-color;
+  border: solid 1px @tool-panel-border-color;
+  box-shadow: 0 0 10px @tool-panel-border-color;
+  border-radius: @component-border-radius;
+  padding: @component-padding;
+}
+
+atom-text-editor,
+atom-text-editor::shadow {
+  .gutter .line-number {
+    &.git-line-modified, &.git-line-added, &.git-line-removed {
+      cursor: pointer;
+    }
+  }
 }

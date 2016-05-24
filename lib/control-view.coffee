@@ -3,8 +3,19 @@
 module.exports =
 class ControlView extends View
   @content: (params) ->
-    @div class: 'overlay', =>
-      @div class: 'block text-highlight', 'Git Blame Error:'
-      @div class: 'error-message block', params.message
-      @div class: 'block', =>
-        @button class: 'btn', click: params.onOk, 'Ok'
+    @div class: 'btn-toolbar git-diff-revert-control', =>
+      
+      @div class: 'btn-group', =>
+        @button class: 'btn icon icon-arrow-up',   title: 'Previous Change', click: 'onPreviousDiff'
+        @button class: 'btn icon icon-arrow-down', title: 'Next Change',     click: 'onNextDiff'
+
+      @button class: 'btn icon icon-mail-reply', title: 'Rollback',  click: 'onRevert'
+      @button class: 'btn icon icon-diff',       title: 'Show Diff', click: 'onCompare'
+      @button class: 'btn icon icon-clippy',     title: 'Copy',      click: 'onCopy'
+
+  initialize: (params) ->
+    @onPreviousDiff = params.onPreviousDiff
+    @onNextDiff = params.onNextDiff
+    @onRevert = params.onRevert
+    @onCompare = params.onCompare
+    @onCopy = params.onCopy
