@@ -1,6 +1,6 @@
 {
-  "name": "git-diff-revert",
-  "main": "./lib/git-diff-revert",
+  "name": "git-change-marker",
+  "main": "./lib/git-change-marker",
   "version": "0.0.0",
   "description": "A short description of your package",
   "keywords": [],
