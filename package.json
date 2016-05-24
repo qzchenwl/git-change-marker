@@ -1,10 +1,10 @@
 {
   "name": "git-change-marker",
   "main": "./lib/git-change-marker",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A short description of your package",
   "keywords": [],
-  "repository": "https://github.com/atom/git-diff-revert",
+  "repository": "https://github.com/qzchenwl/git-change-marker",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
