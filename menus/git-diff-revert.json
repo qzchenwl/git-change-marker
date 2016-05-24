@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle git-diff-revert",
+        "command": "git-diff-revert:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "git-diff-revert",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "git-diff-revert:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
