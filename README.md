@@ -12,4 +12,4 @@ Idea comes from [IntelliJ IDEA](https://www.jetbrains.com/help/idea/2016.1/using
 
 ## Screencast
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![git-change-marker](https://cloud.githubusercontent.com/assets/146802/15532648/7bd3e5e6-2293-11e6-9ebe-c3c04dd96693.gif)
