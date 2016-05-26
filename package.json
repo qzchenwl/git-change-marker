@@ -1,7 +1,7 @@
 {
   "name": "git-change-marker",
   "main": "./lib/git-change-marker",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Click on line-number to show git change marker toolbar. You can go prev/next change, revert change, copy here.",
   "keywords": [],
   "repository": "https://github.com/qzchenwl/git-change-marker",
