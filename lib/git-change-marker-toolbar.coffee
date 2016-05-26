@@ -3,8 +3,8 @@
 module.exports =
 class GitChangeMarkerToolbar extends View
   @content: (params) ->
-    @div class: 'block', =>
-      @div class: 'btn-toolbar git-diff-revert-control', =>
+    @div class: 'block git-change-marker-toolbar', =>
+      @div class: 'btn-toolbar', =>
         @div class: 'btn-group', =>
           @button class: 'btn icon icon-arrow-up',   title: 'Previous Change', click: 'onPreviousChange'
           @button class: 'btn icon icon-arrow-down', title: 'Next Change',     click: 'onNextChange'
@@ -26,6 +26,7 @@ class GitChangeMarkerToolbar extends View
     .then (diff) =>
       @diffView[0].getModel().setText(diff.oldContent)
 
+  # show TextEditorView
   onCompare: (e) ->
     e.stopPropagation()
     @diffView[0].hidden = !@diffView[0].hidden
