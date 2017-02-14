@@ -10,15 +10,14 @@
   box-shadow: 0 0 10px @tool-panel-border-color;
   border-radius: @component-border-radius;
   padding: @component-padding;
-  atom-text-editor::shadow {
+  atom-text-editor {
       .lines > div > div {
           position: static !important;
       }
   }
 }
 
-atom-text-editor,
-atom-text-editor::shadow {
+atom-text-editor {
   .gutter .line-number {
     &.git-line-modified, &.git-line-added, &.git-line-removed {
       cursor: pointer;

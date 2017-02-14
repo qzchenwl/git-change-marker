@@ -19,7 +19,7 @@ class GitChangeMarkerToolbar extends View
     @onRevert = params.onRevert
     @onCopy = params.onCopy
 
-    @diffView[0].hidden = true
+    @diffView[0].style.display = 'none';
     @diffView[0].getModel().setGrammar params.editor.getGrammar()
 
     git.getLineDiff params.editor.getPath(), params.editor.getText(), params.line
@@ -29,4 +29,7 @@ class GitChangeMarkerToolbar extends View
   # show TextEditorView
   onCompare: (e) ->
     e.stopPropagation()
-    @diffView[0].hidden = !@diffView[0].hidden
+    if @diffView[0].style.display is 'none'
+        @diffView[0].style.display = 'flex'
+    else
+        @diffView[0].style.display = 'none'

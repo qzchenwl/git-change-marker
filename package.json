@@ -1,13 +1,13 @@
 {
   "name": "git-change-marker",
   "main": "./lib/git-change-marker",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Click on line-number to show git change marker toolbar. You can go prev/next change, revert change, copy here.",
   "keywords": [],
   "repository": "https://github.com/qzchenwl/git-change-marker",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.13.0 <2.0.0"
   },
   "dependencies": {
     "atom-space-pen-views": "^2.2.0",
